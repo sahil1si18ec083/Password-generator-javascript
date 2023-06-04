@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Password Generator Project</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Password generator</h1>
+      <div class="input-box">
+        <input type="text" id="pwd-box" disabled />
+        <span class="material-icons" id="copyIcon">content_copy</span>
+      </div>
+      <input
+        type="range"
+        name="pwd-range"
+        id="pwd-range"
+        min="6"
+        max="25"
+        value="8"
+      />
+
+      <div class="row">
+        <span>Password Length</span>
+        <span class="pwd-length"></span>
+      </div>
+      <div class="row">
+        <span>Include Lowercase Letters (a-z)</span>
+        <input
+          type="checkbox"
+          name="lower-case"
+          id="lower-case"
+          class="restriction"
+          checked
+        />
+      </div>
+      <div class="row">
+        <span>Include Uppercase Letters (A-Z)</span>
+        <input
+          type="checkbox"
+          name="upper-case"
+          id="upper-case"
+          class="restriction"
+          checked
+        />
+      </div>
+      <div class="row">
+        <span>Include Numbers (0-9)</span>
+        <input
+          type="checkbox"
+          name="numbers"
+          id="numbers"
+          class="restriction"
+          checked
+        />
+      </div>
+      <div class="row">
+        <span>Include Symbols (@-*)</span>
+        <input
+          type="checkbox"
+          name="symbols"
+          id="symbols"
+          class="restriction"
+          checked
+        />
+      </div>
+      <button type="button" class="genBtn" id="genBtn">
+        Generate Password
+      </button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
