@@ -5,4 +5,9 @@ And the generated password can be copied to Clipboard
 - HTML5
 - CSS
 - Javascript
+
+## Demo
+https://sahilkumar-password-generator-in-js.netlify.app/
+<br />
+
 <img width="960" alt="pwgenerator" src="https://github.com/sahil1si18ec083/Password-generator-javascript/assets/103936307/8bc3c8c9-8849-414c-9b13-94e6a47ab626">
